@@ -75,57 +75,24 @@
                   <p>
                     Here are some of the projects I am actively working on. Click on any to explore further!
                   </p>
-                      <title>My GitHub Projects</title>
-    <style>
-        /* Hover effect styling */
-        .one {
-            position: relative;
-            width: 160px;
-        }
-
-        .two {
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-
-        .one:hover .two {
-            opacity: 1;
-        }
-
-        /* Table layout */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        td {
-            padding: 8px;
-            vertical-align: middle;
-        }
-
-        /* Title styling */
-        .papertitle {
-            font-size: 18px;
-            font-weight: bold;
-            color: #1a0dab;
-            text-decoration: none;
-        }
-
-        .papertitle:hover {
-            text-decoration: underline;
-        }
-
-        p {
-            margin: 8px 0;
-        }
-
  <!-- Project 1 -->
-        <tr>
+        <tr onmouseover="proj1_start()" onmouseout="proj1_stop()">
             <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src="images/proj1_before.jpg" width="160" alt="Project Image Before">
+                <div class="one">
+                    <div class="two" id="proj1_image">
+                        <img src="images/proj1_after.jpg" width="160" alt="Project Image After">
+                    </div>
+                    <img src="images/proj1_before.jpg" width="160" alt="Project Image Before">
+                </div>
+                <script>
+                    function proj1_start() {
+                        document.getElementById('proj1_image').style.opacity = "1";
+                    }
+                    function proj1_stop() {
+                        document.getElementById('proj1_image').style.opacity = "0";
+                    }
+                    proj1_stop();
+                </script>
             </td>
             <td style="padding:8px;width:80%;vertical-align:middle">
                 <a href="https://github.com/bassamejlaoui/Awesome-using-AI-to-Write-Codes" class="papertitle">Using AI to Write Codes: Autocomplete to Autopilot - Working with Coding Assistants</a>
@@ -139,73 +106,57 @@
                 <p>This project explores the use of AI in automating code writing and improving development tools for coding assistants.</p>
             </td>
         </tr>
+                  <!-- Project 1 -->
+                  <p>
+                    <a href="https://github.com/bassamejlaoui/Awesome-using-AI-to-Write-Codes">
+                      <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Awesome-using-AI-to-Write-Codes&mode=light&style=horizontal" alt="Using AI to Write Codes">
+                    </a>
+                  </p>
 
-        <!-- Project 2 -->
-        <tr>
-            <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src="images/proj2_before.jpg" width="160" alt="Project Image Before">
-            </td>
-            <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://github.com/bassamejlaoui/Awesome-Deep-Fake" class="papertitle">Awesome Deep Fake</a>
-                <br>
-                <a href="https://github.com/bassamejlaoui">Bassam Mejlaoui</a>
-                <br>
-                <em>GitHub</em>, 2024
-                <br>
-                <a href="https://github.com/bassamejlaoui/Awesome-Deep-Fake">GitHub Link</a>
-                <p></p>
-                <p>This project provides an overview of techniques for creating and detecting deepfakes, including tools and resources for learning more about the field.</p>
-            </td>
-        </tr>
+                  <!-- Project 2 -->
+                  <p>
+                    <a href="https://github.com/bassamejlaoui/Awesome-Deep-Fake">
+                      <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Awesome-Deep-Fake&mode=light&style=horizontal" alt="Awesome Deep Fake">
+                    </a>
+                  </p>
 
-        <!-- Project 3 -->
-        <tr>
-            <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src="images/proj3_before.jpg" width="160" alt="Project Image Before">
-            </td>
-            <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://github.com/bassamejlaoui/Jailbreaking-Censored-Aligned-LLMs" class="papertitle">Jailbreaking Censored/Aligned LLMs</a>
-                <br>
-                <a href="https://github.com/bassamejlaoui">Bassam Mejlaoui</a>
-                <br>
-                <em>GitHub</em>, 2024
-                <br>
-                <a href="https://github.com/bassamejlaoui/Jailbreaking-Censored-Aligned-LLMs">GitHub Link</a>
-                <p></p>
-                <p>This project discusses methods for breaking the censorship or alignment restrictions in large language models (LLMs) for more open AI development.</p>
-            </td>
-        </tr>
+                  <!-- Project 3 -->
+                  <p>
+                    <a href="https://github.com/bassamejlaoui/Jailbreaking-Censored-Aligned-LLMs">
+                      <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Jailbreaking-Censored-Aligned-LLMs&mode=light&style=horizontal" alt="Jailbreaking Censored/Aligned LLMs">
+                    </a>
+                  </p>
 
-        <!-- Project 4 -->
-        <tr>
-            <td style="padding:16px;width:20%;vertical-align:middle">
-                <img src="images/proj4_before.jpg" width="160" alt="Project Image Before">
-            </td>
-            <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://github.com/bassamejlaoui/Voices-in-the-Machine-AI-Speech-Generation" class="papertitle">Voices in the Machine - AI Speech Generation</a>
-                <br>
-                <a href="https://github.com/bassamejlaoui">Bassam Mejlaoui</a>
-                <br>
-                <em>GitHub</em>, 2024
-                <br>
-                <a href="https://github.com/bassamejlaoui/Voices-in-the-Machine-AI-Speech-Generation">GitHub Link</a>
-                <p></p>
-                <p>This project explores AI-driven speech synthesis, focusing on the generation of lifelike voices and speech patterns using machine learning.</p>
-            </td>
-        </tr>
+                  <!-- Project 4 -->
+                  <p>
+                    <a href="https://github.com/bassamejlaoui/Voices-in-the-Machine-AI-Speech-Generation">
+                      <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Voices-in-the-Machine-AI-Speech-Generation&mode=light&style=horizontal" alt="Voices in the Machine - AI Speech Generation">
+                    </a>
+                  </p>
+
+                  <!-- Project 5 -->
+                  <p>
+                    <a href="https://github.com/bassamejlaoui/Voice-Cloning-Translation-Transcription">
+                      <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Voice-Cloning-Translation-Transcription&mode=light&style=horizontal" alt="Voice Cloning, Translation & Transcription">
+                    </a>
+                  </p>
+
+                  <!-- Project 6 -->
+                  <p>
+                    <a href="https://github.com/bassamejlaoui/Awesome-BUILD-YOUR-OWN-BLOCKCHAIN">
+                      <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Awesome-BUILD-YOUR-OWN-BLOCKCHAIN&mode=light&style=horizontal" alt="Build Your Own Blockchain">
+                    </a>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
         <!-- Additional projects can be added in the same structure -->
 
     </table>
 </body>
 </html>
-        
-        <!-- Additional projects can be added in the same structure -->
-
-    </table>
-</body>
-</html>
-
                     </a>
                   </p>
                 </td>
