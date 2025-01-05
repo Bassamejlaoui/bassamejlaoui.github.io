@@ -29,8 +29,16 @@
       text-decoration: underline;
     }
     .container {
-      max-width: 800px;
-      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+    }
+    .left-column, .right-column {
+      width: 25%;
+      padding: 20px;
+    }
+    .center-column {
+      width: 50%;
       padding: 20px;
     }
     h1, h2 {
@@ -73,8 +81,28 @@
       margin-bottom: 10px;
     }
 
+    /* Sidebar Styling */
+    .sidebar {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar h3 {
+      text-align: center;
+      color: #444;
+    }
+
     /* Responsive Design */
     @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .left-column, .right-column, .center-column {
+        width: 100%;
+        margin-bottom: 20px;
+      }
       .profile {
         flex-direction: column;
         text-align: center;
@@ -91,65 +119,93 @@
 
 <body>
   <div class="container">
-    <!-- Profile Section -->
-    <div class="profile">
-      <div class="profile-info">
-        <h1>Bassam (SAM) Mejlaoui</h1>
-        <p>
-          I'm a <span class="highlight">Computational Linguist</span> and <span class="highlight">Data Scientist</span> with experience in machine learning, AI development, and big data consulting. Proficient in Neuroinformatics, Quantum NLP, and Fintech, with expertise in statistical analysis, SQL, and computational linguistics to deliver actionable insights and innovation.
-        </p>
-        <p>
-          <a href="mailto:Bassam.mejlaoui@uit.ac.ma">Email</a> &nbsp;/&nbsp;
-          <a href="data/BassamMejlaoui-bio.txt">Bio</a> &nbsp;/&nbsp;
-          <a href="data/BassamMejlaoui-Resume.pdf">Resume</a> &nbsp;/&nbsp;
-          <a href="https://github.com/Bassamejlaoui/">GitHub</a> &nbsp;/&nbsp;
-          <a href="https://www.linkedin.com/in/bassam-mejlaoui/">LinkedIn</a> &nbsp;/&nbsp;
-          <a href="https://www.x.com/bassamejlaoui/">Twitter</a>
-        </p>
-      </div>
-      <div class="profile-photo">
-        <a href="images/bassammejlaoui.jpg">
-          <img src="images/bassammejlaoui.png" alt="Bassam Mejlaoui Profile Photo">
-        </a>
+    <!-- Left Sidebar -->
+    <div class="left-column">
+      <div class="sidebar">
+        <h3>Contact Info</h3>
+        <p>Email: <a href="mailto:Bassam.mejlaoui@uit.ac.ma">Bassam.mejlaoui@uit.ac.ma</a></p>
+        <p>GitHub: <a href="https://github.com/Bassamejlaoui">github.com/Bassamejlaoui</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/bassam-mejlaoui/">linkedin.com/in/bassam-mejlaoui</a></p>
       </div>
     </div>
 
-    <!-- Research Section -->
-    <div class="research">
-      <h2>Research</h2>
-      <p>
-        I'm broadly interested in leveraging AI and computational techniques for decision-making and human-machine interaction. My research spans Neuroinformatics, Brain-Machine Interfaces, Digital Twin Technology, Quantum NLP, Ethical AI, Algorithmic Governance, Biomedical Data Science, Applied AI, Computational Linguistics, Corpus Linguistics, and Cryptologic Language Analytics. Papers (and preprints) are ordered by recency.
-      </p>
+    <!-- Main Content (Center) -->
+    <div class="center-column">
+      <div class="profile">
+        <div class="profile-info">
+          <h1>Bassam (SAM) Mejlaoui</h1>
+          <p>
+            I'm a <span class="highlight">Computational Linguist</span> and <span class="highlight">Data Scientist</span> with experience in machine learning, AI development, and big data consulting. Proficient in Neuroinformatics, Quantum NLP, and Fintech, with expertise in statistical analysis, SQL, and computational linguistics to deliver actionable insights and innovation.
+          </p>
+          <p>
+            <a href="mailto:Bassam.mejlaoui@uit.ac.ma">Email</a> &nbsp;/&nbsp;
+            <a href="data/BassamMejlaoui-bio.txt">Bio</a> &nbsp;/&nbsp;
+            <a href="data/BassamMejlaoui-Resume.pdf">Resume</a> &nbsp;/&nbsp;
+            <a href="https://github.com/Bassamejlaoui/">GitHub</a> &nbsp;/&nbsp;
+            <a href="https://www.linkedin.com/in/bassam-mejlaoui/">LinkedIn</a> &nbsp;/&nbsp;
+            <a href="https://www.x.com/bassamejlaoui/">Twitter</a>
+          </p>
+        </div>
+        <div class="profile-photo">
+          <a href="images/bassammejlaoui.jpg">
+            <img src="images/bassammejlaoui.png" alt="Bassam Mejlaoui Profile Photo">
+          </a>
+        </div>
+      </div>
+
+      <!-- Research Section -->
+      <div class="research">
+        <h2>Research</h2>
+        <p>
+          I'm broadly interested in leveraging AI and computational techniques for decision-making and human-machine interaction. My research spans Neuroinformatics, Brain-Machine Interfaces, Digital Twin Technology, Quantum NLP, Ethical AI, Algorithmic Governance, Biomedical Data Science, Applied AI, Computational Linguistics, Corpus Linguistics, and Cryptologic Language Analytics. Papers (and preprints) are ordered by recency.
+        </p>
+      </div>
+
+      <!-- Projects Section -->
+      <div class="projects">
+        <h2>Currently Working On</h2>
+        <p>
+          <a href="https://github.com/bassamejlaoui/Awesome-using-AI-to-Write-Codes">
+            <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Awesome-using-AI-to-Write-Codes&mode=light&style=horizontal" alt="Using AI to Write Codes">
+          </a>
+        </p>
+        <p>
+          <a href="https://github.com/bassamejlaoui/Jailbreaking-Censored-Aligned-LLMs">
+            <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Jailbreaking-Censored-Aligned-LLMs&mode=light&style=horizontal" alt="Jailbreaking Censored/Aligned LLMs">
+          </a>
+        </p>
+        <p>
+          <a href="https://github.com/bassamejlaoui/Voices-in-the-Machine-AI-Speech-Generation">
+            <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Voices-in-the-Machine-AI-Speech-Generation&mode=light&style=horizontal" alt="Voices in the Machine - AI Speech Generation">
+          </a>
+        </p>
+        <p>
+          <a href="https://github.com/bassamejlaoui/Voice-Cloning-Translation-Transcription">
+            <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Voice-Cloning-Translation-Transcription&mode=light&style=horizontal" alt="Voice Cloning, Translation & Transcription">
+          </a>
+        </p>
+        <p>
+          <a href="https://github.com/bassamejlaoui/Awesome-BUILD-YOUR-OWN-BLOCKCHAIN">
+            <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Awesome-BUILD-YOUR-OWN-BLOCKCHAIN&mode=light&style=horizontal" alt="Build Your Own Blockchain">
+          </a>
+        </p>
+      </div>
     </div>
 
-    <!-- Projects Section -->
-    <div class="projects">
-      <h2>Currently Working On</h2>
-      <p>
-        <a href="https://github.com/bassamejlaoui/Awesome-using-AI-to-Write-Codes">
-          <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Awesome-using-AI-to-Write-Codes&mode=light&style=horizontal" alt="Using AI to Write Codes">
-        </a>
-      </p>
-      <p>
-        <a href="https://github.com/bassamejlaoui/Jailbreaking-Censored-Aligned-LLMs">
-          <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Jailbreaking-Censored-Aligned-LLMs&mode=light&style=horizontal" alt="Jailbreaking Censored/Aligned LLMs">
-        </a>
-      </p>
-      <p>
-        <a href="https://github.com/bassamejlaoui/Voices-in-the-Machine-AI-Speech-Generation">
-          <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Voices-in-the-Machine-AI-Speech-Generation&mode=light&style=horizontal" alt="Voices in the Machine - AI Speech Generation">
-        </a>
-      </p>
-      <p>
-        <a href="https://github.com/bassamejlaoui/Voice-Cloning-Translation-Transcription">
-          <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Voice-Cloning-Translation-Transcription&mode=light&style=horizontal" alt="Voice Cloning, Translation & Transcription">
-        </a>
-      </p>
-      <p>
-        <a href="https://github.com/bassamejlaoui/Awesome-BUILD-YOUR-OWN-BLOCKCHAIN">
-          <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Awesome-BUILD-YOUR-OWN-BLOCKCHAIN&mode=light&style=horizontal" alt="Build Your Own Blockchain">
-        </a>
-      </p>
+    <!-- Right Sidebar -->
+    <div class="right-column">
+      <div class="sidebar">
+        <h3>Skills</h3>
+        <ul>
+          <li>Data Science</li>
+          <li>Machine Learning</li>
+          <li>Computational Linguistics</li>
+          <li>Neuroinformatics</li>
+          <li>Quantum NLP</li>
+          <li>AI Ethics</li>
+          <li>Python, R, SQL</li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>
