@@ -1,126 +1,156 @@
-
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bassam (Sam) Mejlaoui</title>
-  
+
   <meta name="author" content="Bassam (SAM) Mejlaoui">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  <!-- External Stylesheet -->
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/seal_icon.png">
+
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #444;
+    }
+
+    /* Flexbox Layout */
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .profile-info {
+      flex: 1;
+      padding: 20px;
+    }
+    .profile-photo {
+      flex: 0 0 200px;
+      text-align: center;
+    }
+    .profile-photo img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* Research Section */
+    .research, .projects {
+      margin: 20px 0;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .research p, .projects p {
+      margin-bottom: 10px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .profile {
+        flex-direction: column;
+        text-align: center;
+      }
+      .profile-info {
+        padding: 10px;
+      }
+      .profile-photo {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <!-- Main Table -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr style="padding:0px">
-                <!-- Left Column -->
-                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                  <p style="text-align:center">
-                    <name>Bassam (SAM) Mejlaoui</name>
-                  <p>
-                    I'm a <span class="highlight">Computationl linguist</span> and <span class="highlight">Data Scientist</span> with experience in machine learning, AI development, and big data consulting. Proficient in Neuroinformatics, Quantum NLP, and Fintech, with expertise in statistical analysis, SQL, and computational linguistics to deliver actionable insights and innovation.
-                  </p>
-                  <p style="text-align:center">
-                    <a href="mailto:Bassam.mejlaoui@uit.ac.ma">Email</a> &nbsp;/&nbsp;
-                    <a href="data/BassamMejlaoui-bio.txt">Bio</a> &nbsp;/&nbsp;
-                    <a href="data/BassamMejlaoui-Resume.pdf">Resume</a> &nbsp;/&nbsp;
-                    <a href="https://github.com/Bassamejlaoui/">Github</a> &nbsp;/&nbsp;
-                    <a href="https://www.linkedin.com/in/bassam-mejlaoui/">LinkedIn</a> &nbsp;/&nbsp;
-                    <a href="https://www.x.com/bassamejlaoui/">Twitter</a>                    
-                  </p>
-                </td>
-                <!-- Right Column with Profile Image -->
-                <td style="padding:2.5%;width:36%;max-width:36%;text-align:center">
-                  <a href="images/bassammejlaoui.jpg">
-                    <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" 
-                         alt="Bassam Mejlaoui Profile Photo" 
-                         src="images/bassammejlaoui.png" 
-                         class="hoverZoomLink">
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+  <div class="container">
+    <!-- Profile Section -->
+    <div class="profile">
+      <div class="profile-info">
+        <h1>Bassam (SAM) Mejlaoui</h1>
+        <p>
+          I'm a <span class="highlight">Computational Linguist</span> and <span class="highlight">Data Scientist</span> with experience in machine learning, AI development, and big data consulting. Proficient in Neuroinformatics, Quantum NLP, and Fintech, with expertise in statistical analysis, SQL, and computational linguistics to deliver actionable insights and innovation.
+        </p>
+        <p>
+          <a href="mailto:Bassam.mejlaoui@uit.ac.ma">Email</a> &nbsp;/&nbsp;
+          <a href="data/BassamMejlaoui-bio.txt">Bio</a> &nbsp;/&nbsp;
+          <a href="data/BassamMejlaoui-Resume.pdf">Resume</a> &nbsp;/&nbsp;
+          <a href="https://github.com/Bassamejlaoui/">GitHub</a> &nbsp;/&nbsp;
+          <a href="https://www.linkedin.com/in/bassam-mejlaoui/">LinkedIn</a> &nbsp;/&nbsp;
+          <a href="https://www.x.com/bassamejlaoui/">Twitter</a>
+        </p>
+      </div>
+      <div class="profile-photo">
+        <a href="images/bassammejlaoui.jpg">
+          <img src="images/bassammejlaoui.png" alt="Bassam Mejlaoui Profile Photo">
+        </a>
+      </div>
+    </div>
 
-          <!-- Research Section -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                  <p>
-                    I'm broadly interested in leveraging AI and computational techniques for decision-making and human-machine interaction. My research spans Neuroinformatics, Brain-Machine Interfaces, Digital Twin Technology, Quantum NLP, Ethical AI, Algorithmic Governance, Biomedical Data Science, Applied AI, Computational Linguistics, Corpus Linguistics, and Cryptologic Language Analytics. Papers (and preprints) are ordered by recency.
-                  </p>
-                </td>
-              </tr>
-            </tbody></table>
-	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <!-- Research Section -->
+    <div class="research">
+      <h2>Research</h2>
+      <p>
+        I'm broadly interested in leveraging AI and computational techniques for decision-making and human-machine interaction. My research spans Neuroinformatics, Brain-Machine Interfaces, Digital Twin Technology, Quantum NLP, Ethical AI, Algorithmic Governance, Biomedical Data Science, Applied AI, Computational Linguistics, Corpus Linguistics, and Cryptologic Language Analytics. Papers (and preprints) are ordered by recency.
+      </p>
+    </div>
 
-          <!-- Currently Working On Section -->
-
-          <heading>Currently Working On</heading>
-          
-                  <!-- Project 1 -->
-                  <p>
-                    <a href="https://github.com/bassamejlaoui/Awesome-using-AI-to-Write-Codes">
-                      <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Awesome-using-AI-to-Write-Codes&mode=light&style=horizontal" alt="Using AI to Write Codes">
-                    </a>
-                  </p>
-
-                  <!-- Project 3 -->
-                  <p>
-                    <a href="https://github.com/bassamejlaoui/Jailbreaking-Censored-Aligned-LLMs">
-                      <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Jailbreaking-Censored-Aligned-LLMs&mode=light&style=horizontal" alt="Jailbreaking Censored/Aligned LLMs">
-                    </a>
-                  </p>
-
-                  <!-- Project 4 -->
-                  <p>
-                    <a href="https://github.com/bassamejlaoui/Voices-in-the-Machine-AI-Speech-Generation">
-                      <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Voices-in-the-Machine-AI-Speech-Generation&mode=light&style=horizontal" alt="Voices in the Machine - AI Speech Generation">
-                    </a>
-                  </p>
-
-                  <!-- Project 5 -->
-                  <p>
-                    <a href="https://github.com/bassamejlaoui/Voice-Cloning-Translation-Transcription">
-                      <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Voice-Cloning-Translation-Transcription&mode=light&style=horizontal" alt="Voice Cloning, Translation & Transcription">
-                    </a>
-                  </p>
-
-                  <!-- Project 6 -->
-                  <p>
-                    <a href="https://github.com/bassamejlaoui/Awesome-BUILD-YOUR-OWN-BLOCKCHAIN">
-                      <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Awesome-BUILD-YOUR-OWN-BLOCKCHAIN&mode=light&style=horizontal" alt="Build Your Own Blockchain">
-		
-
-		
-</body>
-</html>
-
-                </td>
-              </tr>
-            </tbody>
-          </table>
-                    </a>
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-        </td>
-      </tr>
-    </tbody>
-  </table>
+    <!-- Projects Section -->
+    <div class="projects">
+      <h2>Currently Working On</h2>
+      <p>
+        <a href="https://github.com/bassamejlaoui/Awesome-using-AI-to-Write-Codes">
+          <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Awesome-using-AI-to-Write-Codes&mode=light&style=horizontal" alt="Using AI to Write Codes">
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/bassamejlaoui/Jailbreaking-Censored-Aligned-LLMs">
+          <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Jailbreaking-Censored-Aligned-LLMs&mode=light&style=horizontal" alt="Jailbreaking Censored/Aligned LLMs">
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/bassamejlaoui/Voices-in-the-Machine-AI-Speech-Generation">
+          <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Voices-in-the-Machine-AI-Speech-Generation&mode=light&style=horizontal" alt="Voices in the Machine - AI Speech Generation">
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/bassamejlaoui/Voice-Cloning-Translation-Transcription">
+          <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Voice-Cloning-Translation-Transcription&mode=light&style=horizontal" alt="Voice Cloning, Translation & Transcription">
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/bassamejlaoui/Awesome-BUILD-YOUR-OWN-BLOCKCHAIN">
+          <img src="https://svg.bookmark.style/api?url=https://github.com/bassamejlaoui/Awesome-BUILD-YOUR-OWN-BLOCKCHAIN&mode=light&style=horizontal" alt="Build Your Own Blockchain">
+        </a>
+      </p>
+    </div>
+  </div>
 </body>
 </html>
