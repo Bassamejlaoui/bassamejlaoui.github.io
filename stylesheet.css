@@ -78,16 +78,19 @@ name {
 /* Profile Section */
 .profile {
     display: flex;
-    flex-direction: column;
+  justify-content: space-between;
     align-items: center;
-     text-align: center;
+  text-align:left;
+  margin-bottom: 15px;
 
 }
 .profile-text{
-  margin: 15px 0;
+  width: 70%;
+    margin: 15px 0;
 }
 .profile-image-link {
-    display: block; /* to make the whole image clickable */
+    float: right;
+  margin-left: 15px;
 }
 
 .profile-image-link img {
@@ -96,9 +99,10 @@ name {
     width: 160px;
     height: 160px;
     display: block; /* removes the margin at bottom of the image */
-    margin: 0 auto; /* center the image horizontally */
-    transition: transform 0.3s ease;
+      transition: transform 0.3s ease;
+
 }
+
 .profile-image-link:hover img {
     transform: scale(1.1); /* Apply a scaling transformation on hover */
 }
@@ -108,7 +112,7 @@ name {
 .research {
     margin-bottom: 20px;
 }
-h2 {
+h2, heading {
     text-align: center;
     font-size: 2em;
      margin-bottom: 20px;
@@ -123,7 +127,9 @@ h2 {
     font-size: 1.2em;
     font-weight: bold;
 }
-
+  .Currently Working On {
+        margin-bottom: 20px;
+ }
 /* Footer Styles */
 .footer {
     text-align: right;
@@ -136,4 +142,11 @@ h2 {
     justify-content: flex-end;
      gap: 10px;
 }
-.footer-
+.footer-icons a {
+    color: #007bff;
+}
+
+/* Dark mode styles */
+[data-theme="dark"] body {
+    color: #D4D4D4;
+    background-color: #121212; /* Dark background color */
