@@ -1,38 +1,91 @@
+/* Global Styles */
 body {
-  font-family: sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
     color: #1c1c1c;
+    background-color: #fff; /* Light background color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-
 name {
     font-size: 2em;
     font-weight: bold;
 }
 
+/* Container */
+.container {
+    max-width: 640px;
+    width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+    flex: 1; /* To push footer to the bottom */
+}
 
-h2 {
-  text-align: center;
-    font-size: 2em;
+/* Navigation Bar */
+.nav {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1c1c1c; /* Title color */
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #007bff;
+     transition: all 0.3s ease;
+     white-space: nowrap;
+
+}
+.nav-link:hover {
+     text-decoration: underline;
+}
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: opacity 0.3s ease;
+}
+
+.theme-toggle:hover {
+   opacity: 0.9;
+}
+/* Content Section */
+.content {
     margin-bottom: 20px;
 }
 
-.highlight {
-  font-weight: bold;
-  color: #007bff; /* Highlight color, you can change this */
+/* Profile Section */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     text-align: center;
+
 }
-
-a {
-  color: #007bff; /* Link color, you can change this */
-  text-decoration: none; /* Remove underlines from links */
+.profile-text{
+  margin: 15px 0;
 }
-
-a:hover {
-  text-decoration: underline; /* Add underline on hover */
-}
-
-
 .profile-image-link {
     display: block; /* to make the whole image clickable */
 }
@@ -50,13 +103,20 @@ a:hover {
     transform: scale(1.1); /* Apply a scaling transformation on hover */
 }
 
-.hoverZoomLink {
-    display: block;
-    transition: transform 0.3s ease;
+
+/* Research Section */
+.research {
+    margin-bottom: 20px;
+}
+h2 {
+    text-align: center;
+    font-size: 2em;
+     margin-bottom: 20px;
 }
 
-.hoverZoomLink:hover {
-    transform: scale(1.1);
+.highlight {
+    font-weight: bold;
+    color: #007bff; /* Highlight color, you can change this */
 }
 
 .papertitle {
@@ -64,42 +124,16 @@ a:hover {
     font-weight: bold;
 }
 
-/* Styles for the "Currently Working On" section */
-#currently-working-on {
-    margin-top: 30px;
+/* Footer Styles */
+.footer {
+    text-align: right;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
 }
-#currently-working-on h2 {
-    text-align: center;
-    margin-bottom: 10px; /* Add some margin below the heading */
+.footer-icons {
+    display: flex;
+    justify-content: flex-end;
+     gap: 10px;
 }
-
-#currently-working-on ul {
-    list-style: none;
-    padding: 0;
-}
-
-#currently-working-on ul li {
-  margin-bottom: 10px;
-}
-
-#currently-working-on ul li a {
-    display: inline-block;
-    text-decoration: none; /* Remove underline from link text */
-}
-
-#currently-working-on ul li img {
-    max-width: 100%;
-    height: auto;
-}
-
-  /* Dark mode styles */
-  [data-theme="dark"] body {
-      color: #D4D4D4;
-    background-color: #121212; /* Dark background color */
-}
-[data-theme="dark"] a {
-      color: #90caf9; /* Light link color for dark mode */
-  }
-[data-theme="dark"] .highlight {
-  color: #90caf9;
-}
+.footer-
