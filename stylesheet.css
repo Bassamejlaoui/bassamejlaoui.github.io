@@ -1,0 +1,105 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+    color: #1c1c1c;
+}
+
+name {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+h2 {
+  text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #007bff; /* Highlight color, you can change this */
+}
+
+a {
+  color: #007bff; /* Link color, you can change this */
+  text-decoration: none; /* Remove underlines from links */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+
+.profile-image-link {
+    display: block; /* to make the whole image clickable */
+}
+
+.profile-image-link img {
+    border-radius: 50%; /* To create the circle effect */
+    object-fit: cover;
+    width: 160px;
+    height: 160px;
+    display: block; /* removes the margin at bottom of the image */
+    margin: 0 auto; /* center the image horizontally */
+    transition: transform 0.3s ease;
+}
+.profile-image-link:hover img {
+    transform: scale(1.1); /* Apply a scaling transformation on hover */
+}
+
+.hoverZoomLink {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.hoverZoomLink:hover {
+    transform: scale(1.1);
+}
+
+.papertitle {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Styles for the "Currently Working On" section */
+#currently-working-on {
+    margin-top: 30px;
+}
+#currently-working-on h2 {
+    text-align: center;
+    margin-bottom: 10px; /* Add some margin below the heading */
+}
+
+#currently-working-on ul {
+    list-style: none;
+    padding: 0;
+}
+
+#currently-working-on ul li {
+  margin-bottom: 10px;
+}
+
+#currently-working-on ul li a {
+    display: inline-block;
+    text-decoration: none; /* Remove underline from link text */
+}
+
+#currently-working-on ul li img {
+    max-width: 100%;
+    height: auto;
+}
+
+  /* Dark mode styles */
+  [data-theme="dark"] body {
+      color: #D4D4D4;
+    background-color: #121212; /* Dark background color */
+}
+[data-theme="dark"] a {
+      color: #90caf9; /* Light link color for dark mode */
+  }
+[data-theme="dark"] .highlight {
+  color: #90caf9;
+}
