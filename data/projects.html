@@ -7,6 +7,49 @@
     <link rel="stylesheet" href="stylesheet.css">
      <link rel="icon" type="image/png" href="images/seal_icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        .projects-list {
+            list-style: none;
+            padding: 0;
+        }
+        .project-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #e1e1e1;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+             display: flex;
+            justify-content: space-between;
+             align-items: center;
+        }
+        .project-title {
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+        .project-description {
+            font-size: 1em;
+            color: #555;
+             margin-bottom: 10px;
+           
+        }
+        .project-link {
+            display: inline-block;
+            background-color: #183a5b;
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+             margin-left: 10px; 
+              
+        }
+        .project-link:hover {
+            background-color: #122b42;
+        }
+        .project-details {
+            flex-grow: 1;
+        }
+    </style>
 </head>
 <body class="antialiased">
     <main class="container">
@@ -42,9 +85,7 @@
         
 <main id="site-main" class="site-main outer">
     <div class="inner posts">
-    <div class="post-feed">
-        <section class="post-card post-card-large">
-
+         <section class="post-card post-card-large">
             <div class="post-card-content">
                 <div class="post-card-content-link">
                     <header class="post-card-header">
@@ -54,334 +95,203 @@
                             Explore a variety of AI projects, crafted for real-world applications and designed to be both practical and enjoyable. From hands-on challenges to addressing real issues, each project aligns with the latest AI trends. Dive into diverse topics with comprehensive guides and video companions, all while having fun along the way.
                         <footer>
                             <div>
+                                Questions? Feedback? Requests? Please ping us on Twitter:
+                                <a href="https://twitter.com/kalibetre" target="_blank">Kalkidan (@kalibetre)</a>
+                                <span>-</span>
+                                <a href="https://twitter.com/julienbarbier42" target="_blank">Julien (@julienbarbier42)</a>
+                            </div>
+                            <div>
+                                Want to collaborate, ask questions, or stay updated on new projects? Join our <a href="https://discord.gg/5Nn8PutZPS?ref=alxappliedai.com" target="_blank">Community on Discord</a>
+                            </div>
+                            <div>
+                                To get <b>certified</b>, you need to let us know your socials by <a class="button-link" href="https://forms.gle/FBjQgDAsyMLDSrD96" target="_blank">Filling out this form</a>
+                            </div>
+                        <div>Enjoy! </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
         </section>
 
-<article class="post-card post tag-project">
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/multimodal-live-interaction-with-gemini-2/">
-            <header class="post-card-header">
-                <h2 class="post-card-title">
-                    Multimodal Live Interaction with Gemini 2
-                </h2>
-            </header>
-            <div class="post-card-excerpt">Gemini 2.0 Flash facilitates real-time, human-like interactions through voice, video, and text. This technology provides a glimpse into the future of artificial intelligence human interaction.</div>
-        </a>
-    </div>
-</article>
+        <ul class="projects-list">
+             <li class="project-item">
+               <div class="project-details">
+                 <h3 class="project-title">Multimodal Live Interaction with Gemini 2</h3>
+                <p class="project-description">Gemini 2.0 Flash facilitates real-time, human-like interactions through voice, video, and text. This technology provides a glimpse into the future of artificial intelligence human interaction.</p>
+               </div>
+                <a href="/multimodal-live-interaction-with-gemini-2/" class="project-link">View Project</a>
+            </li>
+             <li class="project-item">
+               <div class="project-details">
+                 <h3 class="project-title">Grok</h3>
+                <p class="project-description">Grok, an AI chatbot developed by xAI, offers insightful and humorous responses.  It is now accessible to all users, not just premium X subscribers.</p>
+                  </div>
+                 <a href="/grok/" class="project-link">View Project</a>
+           </li>
+             <li class="project-item">
+               <div class="project-details">
+                  <h3 class="project-title">NVIDIA NIMs</h3>
+                <p class="project-description">NVIDIA NIM is a suite of microservices for deploying generative AI models across various environments. We explore the diverse previews deployed through NIMs, such as 3D object generation, vision, and digital twins.</p>
+                 </div>
+                <a href="/nvidia-nims/" class="project-link">View Project</a>
+            </li>
+            <li class="project-item">
+                <div class="project-details">
+                 <h3 class="project-title">Le Chat: Canvas and More</h3>
+                 <p class="project-description">Enhance your research and ideation with Mistral AI’s Le Chat features, such as Canvas for visual brainstorming, web search for comprehensive research, and image generation.</p>
+                  </div>
+                  <a href="/le-chat-canvas-and-more/" class="project-link">View Project</a>
+            </li>
+           <li class="project-item">
+             <div class="project-details">
+                  <h3 class="project-title">Supercharged Note Taking</h3>
+                <p class="project-description">Note-taking apps can leverage AI features like autocomplete to save time and effort, significantly enhancing your note-taking experience.</p>
+                  </div>
+                <a href="/supercharged-note-taking/" class="project-link">View Project</a>
+            </li>
+           <li class="project-item">
+               <div class="project-details">
+                 <h3 class="project-title">Collection of Opensource AI Tools</h3>
+                 <p class="project-description">Open-source AI tools are a fantastic way to enhance your productivity and ignite your creativity, all for free. These tools demonstrate the diverse applications of AI across various domains, offering an opportunity for inspiration and learning.</p>
+                 </div>
+                 <a href="/collection-of-opensource-ai-tools/" class="project-link">View Project</a>
+           </li>
+           <li class="project-item">
+              <div class="project-details">
+                 <h3 class="project-title">Generative Video Effects</h3>
+                <p class="project-description">Create visually captivating video content from images using generative video effects</p>
+                  </div>
+                <a href="/generative-video-effects/" class="project-link">View Project</a>
+            </li>
+           <li class="project-item">
+              <div class="project-details">
+                 <h3 class="project-title">Leveled-Up Diagrams</h3>
+                <p class="project-description">Explore the power of AI in transforming complex textual descriptions into easy-to-understand visual diagrams</p>
+                 </div>
+                <a href="/leveled-up-diagrams/" class="project-link">View Project</a>
+           </li>
+           <li class="project-item">
+            <div class="project-details">
+                 <h3 class="project-title">AI Integrated Terminals</h3>
+                <p class="project-description">Explore how AI is transforming terminal applications like Wave and Warp, enhancing command-line tools with intelligent features to improve user experience and efficiency.</p>
+                 </div>
+                <a href="/ai-integrated-terminals/" class="project-link">View Project</a>
+            </li>
+           <li class="project-item">
+             <div class="project-details">
+                 <h3 class="project-title">On-device AI with Llama 3.2</h3>
+                 <p class="project-description">Explore the power of on-device AI with Llama 3.2, an open-source model designed for efficient edge deployment.</p>
+                </div>
+                 <a href="/on-device-ai-with-llama-3-2/" class="project-link">View Project</a>
+           </li>
+           <li class="project-item">
+            <div class="project-details">
+                 <h3 class="project-title">Idea to MVP with AI</h3>
+                 <p class="project-description">Learn how to quickly transform your idea into a minimum viable product with cutting-edge AI tools.</p>
+                   </div>
+               <a href="/idea-to-mvp-with-ai/" class="project-link">View Project</a>
+            </li>
+            <li class="project-item">
+             <div class="project-details">
+                <h3 class="project-title">Generative UI</h3>
+                <p class="project-description">Simplify the journey from conceptual wireframes to fully functional applications using advanced AI tools that harness vision language models.</p>
+                </div>
+                <a href="/generative-ui/" class="project-link">View Project</a>
+            </li>
+            <li class="project-item">
+            <div class="project-details">
+                 <h3 class="project-title">Personalized AI Research Assistant</h3>
+                 <p class="project-description">Advancements in AI are improving research and knowledge work by enabling tools that process large amounts of information, distill complex ideas, and provide helpful insights to enhance productivity and understanding.</p>
+                 </div>
+                 <a href="/personalized-ai-research-assistant/" class="project-link">View Project</a>
+             </li>
+            <li class="project-item">
+            <div class="project-details">
+                <h3 class="project-title">Text Rendering and Style Control</h3>
+                <p class="project-description">AI-driven design tools now allow seamless integration of text into visuals, empowering creators to produce interactive, custom designs for logos, ads, and brand kits with ease.</p>
+                </div>
+                <a href="/text-rendering-and-style-control/" class="project-link">View Project</a>
+            </li>
+           <li class="project-item">
+              <div class="project-details">
+                  <h3 class="project-title">Idea Generator</h3>
+                <p class="project-description">Discover how Idea Generator can effortlessly inspire your creativity with a vast array of fresh, relevant ideas for any project or task.</p>
+                 </div>
+               <a href="/idea-generator/" class="project-link">View Project</a>
+            </li>
+           <li class="project-item">
+             <div class="project-details">
+                 <h3 class="project-title">AI-Powered Automation Agents</h3>
+                <p class="project-description">Automating routine tasks using agents powered by AI enhances efficiency and productivity in various tasks, from simple to complex.</p>
+                </div>
+                <a href="/ai-powered-automation-agents/" class="project-link">View Project</a>
+           </li>
+            <li class="project-item">
+             <div class="project-details">
+                <h3 class="project-title">Hyperrealism</h3>
+                <p class="project-description">Hyperrealism in AI-driven image generation is advancing digital imagery by producing highly detailed and precise visuals, making them valuable tools for bloggers, designers, and marketers.</p>
+                </div>
+                 <a href="/hyperrealism-in-ai-image-generation/" class="project-link">View Project</a>
+           </li>
+            <li class="project-item">
+            <div class="project-details">
+                 <h3 class="project-title">Building Databases Using AI</h3>
+                <p class="project-description">Explore how AI-driven interfaces are transforming traditional databases into more accessible and intuitive systems, enabling users to create and manage databases through natural language</p>
+                 </div>
+                 <a href="/building-databases-using-ai/" class="project-link">View Project</a>
+            </li>
+            <li class="project-item">
+             <div class="project-details">
+                <h3 class="project-title">Tailoring AI Chatbots for Enhanced Interaction</h3>
+                <p class="project-description">Tailoring AI chatbots enhances our interaction with technology, enabling us to receive refined, concise, and useful responses tailored to our individual needs and preferences.</p>
+                 </div>
+                <a href="/tailoring-chatbots-for-enhanced-interaction/" class="project-link">View Project</a>
+            </li>
+           <li class="project-item">
+            <div class="project-details">
+                 <h3 class="project-title">Meta's Research AI Demos: Exploring SAM 2, SeamlessExpressive, and Beyond</h3>
+                 <p class="project-description">Discover how Meta's Fundamental AI Research (FAIR) team is contributing to the advancement of AI with groundbreaking innovations like Segment Anything Model 2, SeamlessExpressive, Animated Drawings, and Audiobox</p>
+                  </div>
+                 <a href="/meta-fair-ai-demos/" class="project-link">View Project</a>
+            </li>
+           <li class="project-item">
+            <div class="project-details">
+                 <h3 class="project-title">Next-Gen Content Creation</h3>
+                <p class="project-description">As the digital landscape evolves, integrating AI in content creation has transformed the process, allowing for seamless conversion of text and images into dynamic, professional-grade videos.</p>
+                  </div>
+                <a href="/next-gen-content-creation/" class="project-link">View Project</a>
+            </li>
+             <li class="project-item">
+              <div class="project-details">
+                 <h3 class="project-title">Smart Memory - Powering Your Digital Consumption with AI</h3>
+                 <p class="project-description">Navigating the immense volume of daily information in today's digital age can be overwhelming, necessitating tools that streamline this process, such as an AI-enhanced personal assistant or a second brain.</p>
+               </div>
+                  <a href="/ai-powered-smart-memory/" class="project-link">View Project</a>
+             </li>
+             <li class="project-item">
+               <div class="project-details">
+                 <h3 class="project-title">Live Portraits</h3>
+                <p class="project-description">Animate portrait pictures using audio or video, showcasing how AI can transform storytelling and personalize content creation with just a few clicks.</p>
+                </div>
+                <a href="/live-portraits/" class="project-link">View Project</a>
+            </li>
+             <li class="project-item">
+              <div class="project-details">
+                 <h3 class="project-title">Chrome's Built-In Local AI</h3>
+                <p class="project-description">Google is pioneering exciting new tools and browser features to enable the integration of AI models directly into Chrome, bypassing the need for server-side infrastructure while enhancing data privacy and reducing latency.</p>
+                </div>
+                <a href="/chromes-built-in-local-ai/" class="project-link">View Project</a>
+            </li>
+             <li class="project-item">
+              <div class="project-details">
+                  <h3 class="project-title">Gemini in VS Code and Trying out Gemma 2</h3>
+                 <p class="project-description">As developers seek to enhance their workflows, integrating AI tools in code editors like Visual Studio Code (VS Code) has become a pivotal step forward. Let's power up VS Code with Gemini!</p>
+                  </div>
+                 <a href="/gemini-in-vs-code-and-trying-out-gemma-2/" class="project-link">View Project</a>
+             </li>
+        </ul>
 
-<article class="post-card post tag-project">
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/grok/">
-            <header class="post-card-header">
-                <h2 class="post-card-title">
-                    Grok
-                </h2>
-            </header>
-            <div class="post-card-excerpt">Grok, an AI chatbot developed by xAI, offers insightful and humorous responses.  It is now accessible to all users, not just premium X subscribers.</div>
-        </a>
-    </div>
-</article>
-
-<article class="post-card post tag-project">
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/nvidia-nims/">
-            <header class="post-card-header">
-                <h2 class="post-card-title">
-                    NVIDIA NIMs
-                </h2>
-            </header>
-            <div class="post-card-excerpt">NVIDIA NIM is a suite of microservices for deploying generative AI models across various environments. We explore the diverse previews deployed through NIMs, such as 3D object generation, vision, and digital twins.</div>
-        </a>
-    </div>
-</article>
-            
-<article class="post-card post tag-project">
-   <div class="post-card-content">
-        <a class="post-card-content-link" href="/le-chat-canvas-and-more/">
-            <header class="post-card-header">
-                <h2 class="post-card-title">
-                    Le Chat: Canvas and More
-                </h2>
-            </header>
-                <div class="post-card-excerpt">Enhance your research and ideation with Mistral AI’s Le Chat features, such as Canvas for visual brainstorming, web search for comprehensive research, and image generation.</div>
-        </a>
-   </div>
-</article>
-            
-<article class="post-card post tag-project featured">
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/supercharged-note-taking/">
-            <header class="post-card-header">
-                <h2 class="post-card-title">
-                    Supercharged Note Taking
-                </h2>
-            </header>
-            <div class="post-card-excerpt">Note-taking apps can leverage AI features like autocomplete to save time and effort, significantly enhancing your note-taking experience.</div>
-        </a>
-    </div>
-</article>
-            
-<article class="post-card post tag-project featured">
-  <div class="post-card-content">
-        <a class="post-card-content-link" href="/collection-of-opensource-ai-tools/">
-            <header class="post-card-header">
-                <h2 class="post-card-title">
-                    Collection of Opensource AI Tools
-                </h2>
-            </header>
-            <div class="post-card-excerpt">Open-source AI tools are a fantastic way to enhance your productivity and ignite your creativity, all for free. These tools demonstrate the diverse applications of AI across various domains, offering an opportunity for inspiration and learning.</div>
-         </a>
-    </div>
-</article>
-            
-<article class="post-card post tag-project">
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/generative-video-effects/">
-            <header class="post-card-header">
-                <h2 class="post-card-title">
-                    Generative Video Effects
-                </h2>
-            </header>
-           <div class="post-card-excerpt">Create visually captivating video content from images using generative video effects</div>
-        </a>
-    </div>
-</article>
-            
-<article class="post-card post tag-project">
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/leveled-up-diagrams/">
-            <header class="post-card-header">
-                <h2 class="post-card-title">
-                    Leveled-Up Diagrams
-                </h2>
-            </header>
-          <div class="post-card-excerpt">Explore the power of AI in transforming complex textual descriptions into easy-to-understand visual diagrams</div>
-        </a>
-    </div>
-</article>
-            
-<article class="post-card post tag-project">
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/ai-integrated-terminals/">
-            <header class="post-card-header">
-                <h2 class="post-card-title">
-                    AI Integrated Terminals
-                </h2>
-            </header>
-           <div class="post-card-excerpt">Explore how AI is transforming terminal applications like Wave and Warp, enhancing command-line tools with intelligent features to improve user experience and efficiency.</div>
-        </a>
-    </div>
-</article>
-            
-<article class="post-card post tag-project">
-   <div class="post-card-content">
-        <a class="post-card-content-link" href="/on-device-ai-with-llama-3-2/">
-            <header class="post-card-header">
-                <h2 class="post-card-title">
-                    On-device AI with Llama 3.2
-                </h2>
-            </header>
-           <div class="post-card-excerpt">Explore the power of on-device AI with Llama 3.2, an open-source model designed for efficient edge deployment.</div>
-       </a>
-  </div>
-</article>
-            
-<article class="post-card post tag-project">
-   <div class="post-card-content">
-        <a class="post-card-content-link" href="/idea-to-mvp-with-ai/">
-            <header class="post-card-header">
-                <h2 class="post-card-title">
-                     Idea to MVP with AI
-                </h2>
-            </header>
-           <div class="post-card-excerpt">Learn how to quickly transform your idea into a minimum viable product with cutting-edge AI tools.</div>
-         </a>
-    </div>
-</article>
-            
-<article class="post-card post tag-project featured">
-   <div class="post-card-content">
-        <a class="post-card-content-link" href="/generative-ui/">
-            <header class="post-card-header">
-                <h2 class="post-card-title">
-                    Generative UI
-                </h2>
-            </header>
-            <div class="post-card-excerpt">Simplify the journey from conceptual wireframes to fully functional applications using advanced AI tools that harness vision language models.</div>
-         </a>
-    </div>
-</article>
-            
-<article class="post-card post tag-project featured">
-   <div class="post-card-content">
-        <a class="post-card-content-link" href="/personalized-ai-research-assistant/">
-             <header class="post-card-header">
-                <h2 class="post-card-title">
-                     Personalized AI Research Assistant
-                 </h2>
-             </header>
-          <div class="post-card-excerpt">Advancements in AI are improving research and knowledge work by enabling tools that process large amounts of information, distill complex ideas, and provide helpful insights to enhance productivity and understanding.</div>
-        </a>
-    </div>
-</article>
-            
-<article class="post-card post tag-project">
-   <div class="post-card-content">
-        <a class="post-card-content-link" href="/text-rendering-and-style-control/">
-            <header class="post-card-header">
-                <h2 class="post-card-title">
-                    Text Rendering and Style Control
-                </h2>
-            </header>
-            <div class="post-card-excerpt">AI-driven design tools now allow seamless integration of text into visuals, empowering creators to produce interactive, custom designs for logos, ads, and brand kits with ease.</div>
-        </a>
-    </div>
-</article>
-            
-<article class="post-card post tag-project">
-  <div class="post-card-content">
-        <a class="post-card-content-link" href="/idea-generator/">
-            <header class="post-card-header">
-                 <h2 class="post-card-title">
-                    Idea Generator
-                 </h2>
-             </header>
-            <div class="post-card-excerpt">Discover how Idea Generator can effortlessly inspire your creativity with a vast array of fresh, relevant ideas for any project or task.</div>
-        </a>
-    </div>
-</article>
-            
-<article class="post-card post tag-project">
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/ai-powered-automation-agents/">
-            <header class="post-card-header">
-                <h2 class="post-card-title">
-                    AI-Powered Automation Agents
-                </h2>
-            </header>
-             <div class="post-card-excerpt">Automating routine tasks using agents powered by AI enhances efficiency and productivity in various tasks, from simple to complex.</div>
-        </a>
-    </div>
-</article>
-            
-<article class="post-card post tag-project">
-   <div class="post-card-content">
-        <a class="post-card-content-link" href="/hyperrealism-in-ai-image-generation/">
-            <header class="post-card-header">
-                <h2 class="post-card-title">
-                     Hyperrealism
-                </h2>
-            </header>
-             <div class="post-card-excerpt">Hyperrealism in AI-driven image generation is advancing digital imagery by producing highly detailed and precise visuals, making them valuable tools for bloggers, designers, and marketers.</div>
-        </a>
-   </div>
-</article>
-            
-<article class="post-card post tag-project featured">
-   <div class="post-card-content">
-        <a class="post-card-content-link" href="/building-databases-using-ai/">
-            <header class="post-card-header">
-                 <h2 class="post-card-title">
-                     Building Databases Using AI
-                 </h2>
-            </header>
-         <div class="post-card-excerpt">Explore how AI-driven interfaces are transforming traditional databases into more accessible and intuitive systems, enabling users to create and manage databases through natural language</div>
-        </a>
-    </div>
-</article>
-            
-<article class="post-card post tag-project">
-  <div class="post-card-content">
-       <a class="post-card-content-link" href="/tailoring-chatbots-for-enhanced-interaction/">
-            <header class="post-card-header">
-                <h2 class="post-card-title">
-                    Tailoring AI Chatbots for Enhanced Interaction
-                </h2>
-            </header>
-           <div class="post-card-excerpt">Tailoring AI chatbots enhances our interaction with technology, enabling us to receive refined, concise, and useful responses tailored to our individual needs and preferences.</div>
-        </a>
-   </div>
-</article>
-            
-<article class="post-card post tag-project">
-   <div class="post-card-content">
-         <a class="post-card-content-link" href="/meta-fair-ai-demos/">
-             <header class="post-card-header">
-                 <h2 class="post-card-title">
-                    Meta's Research AI Demos: Exploring SAM 2, SeamlessExpressive, and Beyond
-                 </h2>
-             </header>
-             <div class="post-card-excerpt">Discover how Meta's Fundamental AI Research (FAIR) team is contributing to the advancement of AI with groundbreaking innovations like Segment Anything Model 2, SeamlessExpressive, Animated Drawings, and Audiobox</div>
-        </a>
-   </div>
-</article>
-            
-<article class="post-card post tag-project">
-   <div class="post-card-content">
-        <a class="post-card-content-link" href="/next-gen-content-creation/">
-            <header class="post-card-header">
-                 <h2 class="post-card-title">
-                    Next-Gen Content Creation
-                 </h2>
-            </header>
-           <div class="post-card-excerpt">As the digital landscape evolves, integrating AI in content creation has transformed the process, allowing for seamless conversion of text and images into dynamic, professional-grade videos.</div>
-        </a>
-    </div>
-</article>
-            
-<article class="post-card post tag-project">
-   <div class="post-card-content">
-         <a class="post-card-content-link" href="/ai-powered-smart-memory/">
-             <header class="post-card-header">
-                 <h2 class="post-card-title">
-                     Smart Memory - Powering Your Digital Consumption with AI
-                </h2>
-            </header>
-            <div class="post-card-excerpt">Navigating the immense volume of daily information in today's digital age can be overwhelming, necessitating tools that streamline this process, such as an AI-enhanced personal assistant or a second brain.</div>
-         </a>
-   </div>
-</article>
-            
-<article class="post-card post tag-project">
-   <div class="post-card-content">
-        <a class="post-card-content-link" href="/live-portraits/">
-             <header class="post-card-header">
-                <h2 class="post-card-title">
-                    Live Portraits
-                </h2>
-             </header>
-           <div class="post-card-excerpt">Animate portrait pictures using audio or video, showcasing how AI can transform storytelling and personalize content creation with just a few clicks.</div>
-        </a>
-   </div>
-</article>
-            
-<article class="post-card post tag-project">
-   <div class="post-card-content">
-       <a class="post-card-content-link" href="/chromes-built-in-local-ai/">
-            <header class="post-card-header">
-                 <h2 class="post-card-title">
-                    Chrome's Built-In Local AI
-                 </h2>
-             </header>
-          <div class="post-card-excerpt">Google is pioneering exciting new tools and browser features to enable the integration of AI models directly into Chrome, bypassing the need for server-side infrastructure while enhancing data privacy and reducing latency.</div>
-         </a>
-   </div>
-</article>
-            
-<article class="post-card post tag-project">
-  <div class="post-card-content">
-      <a class="post-card-content-link" href="/gemini-in-vs-code-and-trying-out-gemma-2/">
-             <header class="post-card-header">
-                  <h2 class="post-card-title">
-                     Gemini in VS Code and Trying out Gemma 2
-                 </h2>
-              </header>
-           <div class="post-card-excerpt">As developers seek to enhance their workflows, integrating AI tools in code editors like Visual Studio Code (VS Code) has become a pivotal step forward. Let's power up VS Code with Gemini!</div>
-      </a>
-    </div>
-</article>
-
-    </div>
+    
     <nav class="pagination">
     <span class="page-number">Page 1 of 3</span>
         <a class="older-posts" href="/tag/project/page/2/">Older Posts <span aria-hidden="true">→</span></a>
@@ -398,6 +308,13 @@
 </footer>
 </div>
 
+
+<script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous">
+</script>
+<script>
 $(document).ready(function () {
     // Mobile Menu Trigger
     $('.gh-burger').click(function () {
