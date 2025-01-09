@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #1c1c1c;
+    background-color: #fff; /* Light background color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+name {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Container */
+.container {
+    max-width: 640px;
+    width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+    flex: 1; /* To push footer to the bottom */
+}
+
+/* Navigation Bar */
+.nav {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1c1c1c; /* Title color */
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #007bff;
+     transition: all 0.3s ease;
+     white-space: nowrap;
+
+}
+.nav-link:hover {
+     text-decoration: underline;
+}
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: opacity 0.3s ease;
+}
+
+.theme-toggle:hover {
+   opacity: 0.9;
+}
+/* Content Section */
+.content {
+    margin-bottom: 20px;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+  justify-content: space-between;
+    align-items: center;
+  text-align:left;
+  margin-bottom: 15px;
+
+}
+.profile-text{
+  width: 70%;
+    margin: 15px 0;
+}
+.profile-image-link {
+    float: right;
+  margin-left: 15px;
+}
+
+.profile-image-link img {
+    border-radius: 50%; /* To create the circle effect */
+    object-fit: cover;
+    width: 160px;
+    height: 160px;
+    display: block; /* removes the margin at bottom of the image */
+      transition: transform 0.3s ease;
+
+}
+
+.profile-image-link:hover img {
+    transform: scale(1.1); /* Apply a scaling transformation on hover */
+}
+
+
+/* Research Section */
+.research {
+    margin-bottom: 20px;
+}
+h2, heading {
+    text-align: center;
+    font-size: 2em;
+     margin-bottom: 20px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #007bff; /* Highlight color, you can change this */
+}
+
+.papertitle {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+  .Currently Working On {
+        margin-bottom: 20px;
+ }
+/* Footer Styles */
+.footer {
+    text-align: right;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+}
+.footer-icons {
+    display: flex;
+    justify-content: flex-end;
+     gap: 10px;
+}
+.footer-icons a {
+    color: #007bff;
+}
+
+/* Dark mode styles */
+[data-theme="dark"] body {
+    color: #D4D4D4;
+    background-color: #121212; /* Dark background color */
