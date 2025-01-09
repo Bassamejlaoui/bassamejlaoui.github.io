@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
                 <a href="data/BassamMejlaoui-bio.txt" target="_blank" class="nav-link">Bio</a>
                 <a href="data/BassamMejlaoui-Resume.pdf" class="nav-link">Resume</a>
                 </a>
-		<a href="" class="nav-link">Projects</a>
+		<a href="https://www.datascienceportfol.io/BassamMejlaoui" class="nav-link">Projects</a>
                 <a href="https://medium.com/@bassammejlaoui" target="_blank" class="nav-link">
                     Publications <i class="text-xs fas fa-external-link pl-1"></i>
                 </a>
@@ -119,7 +119,7 @@
     </main>
     <script>
         function setTheme(theme) {
-            document.documentElement.setAttribute("data-theme", theme);
+            document.dispatchEvent(new CustomEvent("set-theme", {detail: theme}));
         }
 
         function toggleTheme() {
@@ -136,3 +136,4 @@
     </script>
 </body>
 </html>
+
