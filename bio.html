@@ -7,180 +7,11 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" type="image/png" href="images/seal_icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <style>
-        /* CSS Variables for Light and Dark Mode */
-        :root {
-            --bg-color: #f8f9fa;
-            --text-color: #333;
-            --nav-bg: #f8f9fa;
-              --highlight-color: #007bff;
-        }
-
-        [data-theme="dark"] {
-           --bg-color: #1a1a1a;
-           --text-color: #e0e0e0;
-           --nav-bg: #333;
-               --highlight-color: #66b3ff;
-        }
-        body {
-            font-family: sans-serif;
-            margin: 0;
-              display: flex;
-            flex-direction: column;
-              min-height: 100vh;
-           background-color: var(--bg-color); /* Use the CSS variable */
-             color: var(--text-color); /* Use the CSS variable */
-               transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-        }
-
-       main{
-         flex: 1;
-        }
-
-        .container {
-             max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .nav {
-              background-color: var(--nav-bg); /* Light background for the nav */
-            padding: 10px 20px;
-         transition: background-color 0.3s;
-        }
-        .nav-content {
-             display: flex;
-             justify-content: space-between;
-             align-items: center;
-        }
-        .nav-title {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: var(--text-color); /* Use the CSS variable */
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-           .nav-links {
-            display: flex;
-            align-items: center;
-        }
-
-
-        .nav-link {
-            text-decoration: none;
-             color: var(--text-color); /* Use the CSS variable */
-              padding: 0 15px;
-               transition: color 0.3s;
-        }
-
-        .theme-toggle{
-           background: none;
-           border: none;
-          cursor: pointer;
-        }
-
-         .content {
-            padding: 20px;
-            text-align: left;
-        }
-
-        .profile {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .profile-text {
-           text-align: center;
-           padding-bottom: 20px;
-        }
-
-          .profile-image-link{
-           max-width: 200px;
-            width: 100%;
-            margin-top: 10px;
-            display: block;
-          }
-
-           .profile-image-link img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-         }
-
-         .research {
-           padding: 20px;
-        }
-
-        .footer {
-              background-color: var(--nav-bg); /* Light footer background */
-            padding: 20px;
-            text-align: center;
-          margin-top: auto;
-            transition: background-color 0.3s;
-        }
-
-
-        .footer-icons{
-          display: flex;
-          justify-content: center;
-          gap: 20px;
-        }
-          .footer a{
-             color: var(--text-color);
-        }
-
-           .highlight {
-             font-weight: bold;
-            color: var(--highlight-color); /* A highlight color */
-            transition: color 0.3s;
-           }
-        /* Responsive styles */
-        @media (min-width: 768px) {
-            .container {
-                padding: 20px 40px;
-            }
-             .nav-content {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-           .nav-links {
-            display: flex;
-            align-items: center;
-        }
-             .profile{
-             flex-direction: row;
-               align-items: flex-start;
-              gap: 40px;
-             }
-
-             .profile-text{
-                text-align: left;
-                 padding-bottom: 0;
-               }
-
-              .profile-image-link{
-                margin-top: 0px;
-               max-width: 250px;
-               }
-        }
-
-
-         @media (max-width: 600px) {
-          .nav-links {
-           flex-direction: column;
-           align-items: flex-start;
-          }
-          .nav-link {
-            padding: 10px 0px;
-           }
-          .footer-icons {
-              flex-direction: column;
-              gap: 10px;
-          }
-          }
-    </style>
+      <style>
+      .research{
+       padding: 20px;
+      }
+      </style>
 </head>
 <body class="antialiased">
     <main class="container">
@@ -194,7 +25,7 @@
                 <a href="bio.html" class="nav-link">Bio</a>
                 <a href="data/BassamMejlaoui-Resume.pdf" class="nav-link">Resume</a>
                 </a>
-		<a href="https://www.datascienceportfol.io/BassamMejlaoui" class="nav-link">Projects</a>
+		        <a href="https://www.datascienceportfol.io/BassamMejlaoui" class="nav-link">Projects</a>
                 <a href="https://medium.com/@bassammejlaoui" target="_blank" class="nav-link">
                     Publications <i class="text-xs fas fa-external-link pl-1"></i>
                 </a>
@@ -215,21 +46,34 @@
         <section class="content">
             <div class="profile">
               <div class="profile-text">
-                   <p style="text-align:center">
-                    <p>I am Bassam Mejlaoui a skilled Data Scientist, Fintech Analyst, and Computational Linguist, specializing in machine learning, data analysis, and natural language processing (NLP). Throughout my career, I have contributed to the development of advanced linguistic models and led successful data-driven initiatives across various industries, including tech, finance, and academia.</p>
-
-                    <p>As a  Data Scientist, I manage high-performing teams and delivering impactful data-driven solutions. My expertise in big data consulting, statistical analysis, and SQL enables me to provide actionable insights that inform strategic business decisions, improve data modeling techniques, and drive growth. Additionally, I have a solid background in artificial intelligence, machine learning, and financial data analysis, which allows me to enhance decision-making and performance in both technical and business environments.</p>
-
-                    <p>I am passionate about leveraging my skills to bridge the gap between linguistic data and advanced machine learning applications. My ability to communicate effectively between cross-functional teams ensures high-quality, timely results in fast-paced settings.</p>
+                    <p style="text-align:center">
+                     <p>
+                         I am Bassam Mejlaoui a skilled Data Scientist, Fintech Analyst, and Computational Linguist, specializing in machine learning, data analysis, and natural language processing (NLP). Throughout my career, I have contributed to the development of advanced linguistic models and led successful data-driven initiatives across various industries, including tech, finance, and academia.
                     </p>
-                </div>
+                    <p>
+                     As a  Data Scientist, I manage high-performing teams and delivering impactful data-driven solutions. My expertise in big data consulting, statistical analysis, and SQL enables me to provide actionable insights that inform strategic business decisions, improve data modeling techniques, and drive growth. Additionally, I have a solid background in artificial intelligence, machine learning, and financial data analysis, which allows me to enhance decision-making and performance in both technical and business environments.
+                  </p>
+                     <p>
+                      I am passionate about leveraging my skills to bridge the gap between linguistic data and advanced machine learning applications. My ability to communicate effectively between cross-functional teams ensures high-quality, timely results in fast-paced settings.
+                  </p>
+                </p>
+                 </div>
                  <a href="images/bassammejlaoui.jpg" class="profile-image-link">
                     <img src="images/bassammejlaoui.png" alt="Bassam Mejlaoui Profile Photo">
-                 </a>
-
-            </div>
+                   </a>
+                  </p>
+                </div>
         </section>
-         <footer class="footer">
+          <section class="content">
+              <div class="research">
+                  <h2>Research</h2>
+                   <p>
+                        I'm broadly interested in leveraging AI and computational techniques for decision-making and human-machine interaction. My research spans Neuroinformatics, Brain-Machine Interfaces, Digital Twin Technology, Quantum NLP, Ethical AI, Algorithmic Governance, Biomedical Data Science, Applied AI, Computational Linguistics, Corpus Linguistics, and Cryptologic Language Analytics. Papers (and preprints) are ordered by recency.
+                   </p>
+             </div>
+          </section>
+    </main>
+        <footer class="footer">
             <div class="footer-icons">
                   <a href="https://scholar.google.com/citations?user=mGORgt4AAAAJ&hl=en" target="_blank"
                rel="noopener noreferrer" >
@@ -282,7 +126,7 @@
     </main>
     <script>
         function setTheme(theme) {
-            document.documentElement.setAttribute("data-theme", theme);
+            document.dispatchEvent(new CustomEvent("set-theme", {detail: theme}));
         }
 
         function toggleTheme() {
