@@ -150,3 +150,27 @@ h2, heading {
 [data-theme="dark"] body {
     color: #D4D4D4;
     background-color: #121212; /* Dark background color */
+}
+[data-theme="dark"] .nav {
+        border-bottom: 1px solid #333;
+}
+[data-theme="dark"] .nav-title{
+   color: #D4D4D4;
+}
+[data-theme="dark"] h2{
+    color:#D4D4D4;
+}
+[data-theme="dark"] .nav-link {
+    color: #00bfff;
+}
+[data-theme="dark"] .theme-toggle {
+       fill: #D4D4D4;
+}
+/* New blue highlight rule */
+.blue-highlight {
+    background-color: #007bff;
+    color: white;
+    padding: 0.2em; /* Optional: Adds some padding around the text */
+        border-radius: 0.2em;/* Optional: Make background rounded */
+
+}
