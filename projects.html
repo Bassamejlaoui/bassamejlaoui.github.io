@@ -8,6 +8,23 @@
     <link rel="icon" type="image/png" href="images/seal_icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
      <style>
+         :root {
+        --light-bg-color: #f0f0f0;
+        --light-text-color: #1c1c1c;
+        --dark-bg-color: #1c1c1c;
+        --dark-text-color: #D4D4D4;
+       }
+
+       html[data-theme="light"] {
+            --bg-color: var(--light-bg-color);
+            --text-color: var(--light-text-color);
+        }
+
+        html[data-theme="dark"] {
+            --bg-color: var(--dark-bg-color);
+            --text-color: var(--dark-text-color);
+        }
+
        .projects {
         padding: 20px;
         }
@@ -101,7 +118,6 @@
                  </a>
                 <a href="bio.html" class="nav-link">Bio</a>
                 <a href="data/BassamMejlaoui-Resume.pdf" class="nav-link">Resume</a>
-                </a>
 		        <a href="projects.html" class="nav-link">Projects</a>
                 <a href="https://medium.com/@bassammejlaoui" target="_blank" class="nav-link">
                     Publications <i class="text-xs fas fa-external-link pl-1"></i>
@@ -125,7 +141,8 @@
             <h2 class="category">work</h2>
             <div class="grid">
                 <div class="grid-item">
-			<div class="card hoverable">
+                  <a href="">
+                    <div class="card hoverable">
                         <figure>
                           <img src="images/Multi-Agent.png" alt="project thumbnail">
                         </figure>
@@ -135,7 +152,8 @@
                            </div>
                        </div>
                     </a>
-			<div class="card hoverable">
+                  <a href="">
+				<div class="card hoverable">
                         <figure>
                           <img src="images/Jailbreaking.png" alt="project thumbnail">
                         </figure>
@@ -145,7 +163,8 @@
                            </div>
                        </div>
                     </a>
-			<div class="card hoverable">
+                  <a href="">
+			        <div class="card hoverable">
                         <figure>
                           <img src="images/On-device.png" alt="project thumbnail">
                         </figure>
@@ -155,6 +174,7 @@
                            </div>
                        </div>
                     </a>
+                  <a href="">
                       <div class="card hoverable">
                         <figure>
                           <img src="images/On-device.png" alt="project thumbnail">
@@ -165,6 +185,7 @@
                            </div>
                        </div>
                     </a>
+                  <a href="">
                       <div class="card hoverable">
                         <figure>
                           <img src="images/Gemini_in_VS_Code_and_Trying_out_Gemma2.png" alt="project thumbnail">
@@ -214,7 +235,9 @@
                            </div>
                       </div>
                      </a>
-         </div>
+               </div>
+               </div>
+          </div>
         </section>
         <footer class="footer">
             <div class="footer-icons">
@@ -269,20 +292,9 @@
     </main>
     <script>
         function setTheme(theme) {
-            document.dispatchEvent(new CustomEvent("set-theme", {detail: theme}));
+            document.documentElement.setAttribute("data-theme", theme);
         }
 
         function toggleTheme() {
             const currentTheme = document.documentElement.getAttribute("data-theme");
-            const newTheme = currentTheme === "dark" ? "light" : "dark";
-            setTheme(newTheme);
-        }
-
-        document.addEventListener("astro:page-load", () => {
-            document
-                .getElementById("theme-toggle")
-                .addEventListener("click", toggleTheme);
-        });
-    </script>
-</body>
-</html>
+            const newTheme = currentTheme === "dark" ? "light" : "
