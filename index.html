@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bassam Mejlaoui</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" type="image/png" href="images/seal_icon.png">
+     <link rel="icon" type="image/png" href="images/seal_icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <script type="module">
+        <script type="module">
         const defaultTheme = "light";
         const n = "theme";
 
@@ -38,7 +38,7 @@
             e.detail ? (localStorage.setItem(n, e.detail), t(e.detail)) : (localStorage.removeItem(n), t(a(e.detail)))
         }
 
-        document.addEventListener("set-theme", c), window.addEventListener("storage", l), r.addEventListener("change", m), document.addEventListener("astro:after-swap", m), t(a());
+        document.addEventListener("set-theme", c), window.addEventListener("storage", l), r.addEventListener("change", m), document.addEventListener("DOMContentLoaded", m), t(a());
     </script>
 </head>
 <body class="antialiased">
@@ -51,9 +51,9 @@
                     Email
                  </a>
                 <a href="bio.html" class="nav-link">Bio</a>
-		        <a href="data/BassamMejlaoui-Resume.pdf" class="nav-link">Resume</a>
+		<a href="data/BassamMejlaoui-Resume.pdf" class="nav-link">Resume</a>
                 </a>
-		        <a href="projects.html" class="nav-link">Projects</a>
+		<a href="projects.html" class="nav-link">Projects</a>
                 <a href="https://medium.com/@bassammejlaoui" target="_blank" class="nav-link">Publications <i class="text-xs fas fa-external-link pl-1"></i>
                 </a>
                 <button id="theme-toggle" aria-label="Toggle theme"
@@ -78,8 +78,8 @@
                          I'm a <span class="highlight">Computationl linguist</span> and <span class="highlight">Data Scientist</span> with machine learning, AI development, and big data consulting. With advanced studies from Stanford and WorldQuant University, I specialize in Biomedical Data science, Quantum NLP, and Fintech. Proficient in Python, SQL, statistical analysis, and computational linguistics, I design scalable models and data-driven solutions to deliver actionable insights and drive innovation across diverse challenges. Multilingual and globally focused, I excel at merging technical expertise with impactful results.
                      </p>
                  </div>
-                 <a href="images/bassammejlaoui.jpg" class="profile-image-link">
-                    <img src="images/bassammejlaoui.png" alt="Bassam Mejlaoui Profile Photo">
+                 <a href="images/gxw3112p.png" class="profile-image-link">
+                    <img src="images/gxw3112p.png" alt="Bassam Mejlaoui Profile Photo">
                    </a>
 
                   </p>
@@ -89,7 +89,7 @@
               <div class="research">
                   <h2>Research</h2>
                    <p>
-                        I'm broadly interested in leveraging AI and computational techniques for decision-making and human-machine interaction. My research spans Neuroinformatics, Brain-Machine Interfaces, Digital Twin Technology, Quantum NLP, Ethical AI, Algorithmic Governance, Biomedical Data Science, Applied AI, Computational Linguistics, Corpus Linguistics, and Cryptologic Language Analytics. Papers (and preprints) are ordered by recency.
+                         <b><mark>I'm broadly interested in leveraging AI and computational techniques for decision-making and human-machine interaction.</mark></b> My research spans Neuroinformatics, Brain-Machine Interfaces, Digital Twin Technology, Quantum NLP, Ethical AI, Algorithmic Governance, Biomedical Data Science, Applied AI, Computational Linguistics, Corpus Linguistics, and Cryptologic Language Analytics. Papers (and preprints) are ordered by recency.
                    </p>
              </div>
           </section>
@@ -159,14 +159,14 @@
             setTheme(newTheme);
         }
 
-        document.addEventListener("astro:page-load", () => {
+        document.addEventListener("DOMContentLoaded", () => {
             document
                 .getElementById("theme-toggle")
                 .addEventListener("click", toggleTheme);
         });
 
 <!-- Footer -->
-    
+
     <footer class="fixed-bottom">
       <div class="container mt-0">
         © Copyright 2025 Bassam Mejlaoui. target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme
