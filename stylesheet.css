@@ -168,9 +168,9 @@ h2, heading {
 }
 /* New blue highlight rule */
 .blue-highlight {
-    background-color: #007bff;
-    color: white;
+   background-color: #ADD8E6; /* light blue */
+    color: black;
     padding: 0.2em; /* Optional: Adds some padding around the text */
-        border-radius: 0.2em;/* Optional: Make background rounded */
+    border-radius: 0.2em; /* Optional: Make background rounded */
 
 }
