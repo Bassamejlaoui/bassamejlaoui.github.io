@@ -56,7 +56,7 @@
 		<a href="projects.html" class="nav-link">Projects</a>
                 <a href="https://medium.com/@bassammejlaoui" target="_blank" class="nav-link">Publications <i class="text-xs fas fa-external-link pl-1"></i>
                 </a>
-                <button id="theme-toggle" aria-label="Toggle theme"
+                <button id="theme-toggle-nav" aria-label="Toggle theme"
                         class="theme-toggle">
                     <svg width="1em" height="1em" viewBox="0 0 512 512"
                          class="h-[14px] w-[14px] text-[#1c1c1c] dark:text-[#D4D4D4]" data-icon="fa6-solid:circle-half-stroke">
@@ -93,7 +93,16 @@
                    </p>
              </div>
           </section>
-
+         <button id="theme-toggle-outside" aria-label="Toggle theme" class="theme-toggle-outside">
+            <svg width="1em" height="1em" viewBox="0 0 512 512"
+                 class="h-[14px] w-[14px] text-[#1c1c1c] dark:text-[#D4D4D4]" data-icon="fa6-solid:circle-half-stroke">
+                <symbol id="ai:fa6-solid:circle-half-stroke">
+                    <path fill="currentColor"
+                          d="M448 256c0-106-86-192-192-192v384c106 0 192-86 192-192M0 256a256 256 0 1 1 512 0a256 256 0 1 1-512 0"/>
+                </symbol>
+                <use xlink:href="#ai:fa6-solid:circle-half-stroke"></use>
+            </svg>
+        </button>
 	       </div>
           </div>
  </section>
@@ -160,10 +169,15 @@
         }
 
         document.addEventListener("DOMContentLoaded", () => {
-            document
-                .getElementById("theme-toggle")
+           document
+                .getElementById("theme-toggle-nav")
                 .addEventListener("click", toggleTheme);
+            document
+                .getElementById("theme-toggle-outside")
+                .addEventListener("click", toggleTheme);
+
         });
+
 
 <!-- Footer -->
 
